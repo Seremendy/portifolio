@@ -16,6 +16,6 @@
 
 ### Rodrigo Morello
 
-### Linkedin: https://www.linkedin.com/rodrigo-morello-dev/
+### Linkedin: [https://www.linkedin.com/rodrigo-morello-dev/](https://www.linkedin.com/in/rodrigo-morello-dev/)
 
 
