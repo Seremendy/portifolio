@@ -24,18 +24,17 @@ body {
 
 .menu {
     display: flex;
-    padding: 1rem 10%;
     background-color: var(--main-color);
 }
 
 .menu-lista {
     display: flex;
-    gap: 2rem;
-    margin: 2rem 10%;  
+    margin: 2rem 10%;
 }
 
 .menu-item {
     list-style: none;
+    margin: 0 2rem;
 }
 
 .menu-link {
@@ -43,10 +42,11 @@ body {
     text-decoration: none;
     font-family: var(--font-estyle-principal);
     font-weight: 600;
-    font-size: 1rem;
-    border: 1px solid var(--main-color);
+    font-size: 1.5rem;
+    
     border-radius: 5px;
     padding: 1rem 2rem;
+
 }
 
 .menu-link:hover {
@@ -154,20 +154,38 @@ body {
     text-decoration: none;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 768px) {
+    .menu-lista {
+        flex-direction: column;
+        align-items: center;
+        gap: 3rem;
+    }
+
     .conteudo-principal {
         flex-direction: column-reverse;
         padding: 5%;
-    }
-
-    .menu {
-        justify-content: center;
     }
 
     .container-conteudo {
         width: auto;
     }
 
+    .menu {
+        width: auto;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .conteudo-principal {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .container-conteudo {
+        align-items: flex-start;
+        text-align: left;
+    }
 }
 
 
