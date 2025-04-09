@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
 :root {
-    --main-color: #0F0F0F;
+    --main-color: #283618;
     --text-color: #FAF0E6;
-    --secondary-color: #232D3F;
-    --hover-color: #435B66;
+    --secondary-color: #dda15e;
+    --hover-color: #606c38;
 
     
     --font-estyle-principal: 'Montserrat', sans-serif;
@@ -18,8 +18,15 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: var(--secondary-color);
     color: var(--text-color);
+}
+
+main {
+    flex: 1;
 }
 
 .menu {
@@ -52,10 +59,9 @@ body {
 .menu-link:hover {
     background-color: var(--hover-color);
     color: var(--main-color);
-    padding: 1rem 2.5rem;
+    padding: 1rem 2rem;
     transition: 0.4s;
 }
-
 
 .conteudo-principal {
     display: flex;
@@ -85,7 +91,7 @@ body {
 .conteudo__texto {
     color: var(--text-color);
     font-family: var(--font-estyle-secundario);
-    letter-spacing: 1.5px;
+    letter-spacing: 0.5px;
 }
 
 .container-conteudo {
